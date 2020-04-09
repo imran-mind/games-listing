@@ -1,21 +1,94 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  width: 50%;
+  height: 100px;
+  /* background-color: red; */
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
+
+.logo{
+  width: 20px;
+  cursor: pointer;
+  height: 15px;
+  padding-right: 4px;
+}
+
+.loading{
+  width: 146%;
+  padding: 10px;
+}
+.tooltip {
+  position: relative;
+  display: flex;
+}
+
+input{
+  margin-bottom: 12px;
+  border-radius: 32px;
+  font-size: 17px;
+  outline: none;
+  padding: 10px;
+  float: left;
+}
+
+th{
+  position: sticky;
+  top: 0px;
+}
+span{
+  float: right;
+  font-size: 18px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  bottom: 100%;
+  left: 50%; 
+  margin-left: -60px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+body {
+  width: 70;
+}
+
 #customers {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
-#customers td, #customers th {
+#customers td,
+#customers th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-#customers tr:hover {background-color: #ddd;}
+#customers tr:hover {
+  background-color: #ddd;
+}
 
 #customers th {
   padding-top: 12px;
